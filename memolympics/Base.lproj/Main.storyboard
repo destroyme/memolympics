@@ -1,13 +1,146 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Learn-->
+        <scene sceneID="JW7-d7-wta">
+            <objects>
+                <viewController title="Learn" id="nkK-d9-0df" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BPU-1g-BZy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZaR-Ee-bYa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="R4J-wJ-GIw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Learn" id="I6g-yD-9BR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cax-Xb-fng" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1557" y="859"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="bbf-we-USV">
+            <objects>
+                <viewController title="Games" id="S2h-7V-Aim" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcp-aQ-cae"/>
+                        <viewControllerLayoutGuide type="bottom" id="uXE-BH-1uz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Wr-BX-WkK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Games" id="uAL-45-X7H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeU-mf-WAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1557" y="-5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="esb-vt-QtO">
+            <objects>
+                <tabBarController id="8Kg-1V-e2F" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UhV-q8-ndd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="S2h-7V-Aim" kind="relationship" relationship="viewControllers" id="ncb-kx-hYI"/>
+                        <segue destination="nkK-d9-0df" kind="relationship" relationship="viewControllers" id="a7z-kT-Wjj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLT-er-2aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2451" y="386"/>
+        </scene>
+        <!--Difficulty Level-->
+        <scene sceneID="i5Q-20-sGq">
+            <objects>
+                <viewController title="Difficulty Level" id="yqh-uh-Rsi" customClass="gameDifficultyViewController" customModule="memolympics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u9G-jd-UWQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Fk-ud-FWs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2yP-Xu-gTG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQ1-Lq-hZA">
+                                <rect key="frame" x="257" y="232" width="86" height="30"/>
+                                <state key="normal" title="intermediate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="VUl-Ap-Cs0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrt-Ge-oZU">
+                                <rect key="frame" x="274" y="285" width="54" height="30"/>
+                                <state key="normal" title="olympic">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="Uw9-IF-3PB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R69-Xa-H6i">
+                                <rect key="frame" x="275" y="338" width="51" height="30"/>
+                                <state key="normal" title="custom">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="WfA-AH-Myx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8U-OT-H63">
+                                <rect key="frame" x="284" y="186" width="32" height="30"/>
+                                <state key="normal" title="easy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="qjk-nd-ev9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R69-Xa-H6i" firstAttribute="centerX" secondItem="2yP-Xu-gTG" secondAttribute="centerX" id="0rf-Ot-FJ1"/>
+                            <constraint firstItem="zrt-Ge-oZU" firstAttribute="top" secondItem="vQ1-Lq-hZA" secondAttribute="bottom" constant="23" id="AvT-Ib-vJF"/>
+                            <constraint firstItem="c8U-OT-H63" firstAttribute="top" secondItem="u9G-jd-UWQ" secondAttribute="bottom" constant="166" id="C89-E2-Kuv"/>
+                            <constraint firstItem="vQ1-Lq-hZA" firstAttribute="top" secondItem="c8U-OT-H63" secondAttribute="bottom" constant="16" id="DT1-2l-vhZ"/>
+                            <constraint firstItem="R69-Xa-H6i" firstAttribute="top" secondItem="zrt-Ge-oZU" secondAttribute="bottom" constant="23" id="NXV-Nb-WwM"/>
+                            <constraint firstItem="R69-Xa-H6i" firstAttribute="centerX" secondItem="c8U-OT-H63" secondAttribute="centerX" id="Sf9-y8-6cE"/>
+                            <constraint firstItem="R69-Xa-H6i" firstAttribute="centerX" secondItem="zrt-Ge-oZU" secondAttribute="centerX" id="e5Z-Bm-eaS"/>
+                            <constraint firstItem="R69-Xa-H6i" firstAttribute="centerX" secondItem="vQ1-Lq-hZA" secondAttribute="centerX" id="uUD-kL-cMQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Qdg-6q-tTn">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="rfZ-fg-gZh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="customDifficultyButton" destination="R69-Xa-H6i" id="MlZ-EO-e7n"/>
+                        <outlet property="easyDifficultyButton" destination="c8U-OT-H63" id="geO-Uk-4Oy"/>
+                        <outlet property="intermediateDifficultyButton" destination="vQ1-Lq-hZA" id="SnR-RR-q5y"/>
+                        <outlet property="olympicDifficultyButton" destination="zrt-Ge-oZU" id="BbL-iN-xef"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y9e-y8-UWF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-838" y="-5"/>
+        </scene>
+        <!--Word Game-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Word Game" id="vXZ-lx-hvc" customClass="WordGameViewController" customModule="memolympics" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +148,58 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55d-7G-C4s">
+                                <rect key="frame" x="289" y="28" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="ZOv-SU-3aP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="| |"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xd5-Y5-eYV">
+                                <rect key="frame" x="503" y="27" width="78" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="55d-7G-C4s" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" symbolic="YES" id="ADX-mu-DGg"/>
+                            <constraint firstItem="55d-7G-C4s" firstAttribute="centerY" secondItem="xd5-Y5-eYV" secondAttribute="centerY" id="OqC-Vb-Hfx"/>
+                            <constraint firstItem="xd5-Y5-eYV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="7" id="Tia-GX-ehl"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xd5-Y5-eYV" secondAttribute="bottom" constant="549" id="cdD-3z-pix"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xd5-Y5-eYV" secondAttribute="trailing" constant="3" id="dmc-d5-EfD"/>
+                            <constraint firstItem="55d-7G-C4s" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="lUr-dU-7Ll"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="G8l-YN-8B6" appends="YES" id="FN0-yQ-1Sh"/>
+                            <outletCollection property="gestureRecognizers" destination="yKt-FS-c97" appends="YES" id="uhi-AZ-i9G"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="leftSwipe" destination="G8l-YN-8B6" id="Bg9-CJ-dOR"/>
+                        <outlet property="rightSwipe" destination="yKt-FS-c97" id="Wag-WX-Pdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="G8l-YN-8B6">
+                    <connections>
+                        <action selector="changeWordWithSwipe:" destination="vXZ-lx-hvc" id="7Oz-vG-yx8"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="yKt-FS-c97">
+                    <connections>
+                        <action selector="changeWordWithSwipe:" destination="vXZ-lx-hvc" id="rND-OT-hMY"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="-83" y="-5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VUl-Ap-Cs0"/>
+    </inferredMetricsTieBreakers>
 </document>

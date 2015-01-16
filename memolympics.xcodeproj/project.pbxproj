@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3928405D1A52053F00AA7CE8 /* WordGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3928405C1A52053F00AA7CE8 /* WordGameViewController.swift */; };
 		398D74B61A4A0E4600B127BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D74B51A4A0E4600B127BD /* AppDelegate.swift */; };
 		398D74B81A4A0E4600B127BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D74B71A4A0E4600B127BD /* ViewController.swift */; };
 		398D74BB1A4A0E4600B127BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 398D74B91A4A0E4600B127BD /* Main.storyboard */; };
 		398D74BD1A4A0E4600B127BD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 398D74BC1A4A0E4600B127BD /* Images.xcassets */; };
 		398D74C01A4A0E4600B127BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 398D74BE1A4A0E4600B127BD /* LaunchScreen.xib */; };
 		398D74CC1A4A0E4600B127BD /* memolympicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D74CB1A4A0E4600B127BD /* memolympicsTests.swift */; };
+		398D74D81A4A0E9900B127BD /* WordGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398D74D71A4A0E9900B127BD /* WordGame.swift */; };
+		398D74E81A4A52CC00B127BD /* dictutf8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 398D74E71A4A52CC00B127BD /* dictutf8.txt */; };
+		39F74E1D1A57B8C900FF10D8 /* gameDifficultyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F74E1C1A57B8C900FF10D8 /* gameDifficultyViewController.swift */; };
+		39FBB8811A55FE6C00EE25C8 /* MemolympicsKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB8801A55FE6C00EE25C8 /* MemolympicsKit.swift */; };
+		39FBB8831A55FEBB00EE25C8 /* TimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB8821A55FEBB00EE25C8 /* TimeFunctions.swift */; };
+		39FBB8871A5606F500EE25C8 /* WordScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FBB8861A5606F500EE25C8 /* WordScroller.swift */; };
+		39FE3BC41A5B869D0063D81C /* gameDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FE3BC31A5B869D0063D81C /* gameDifficulty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3928405C1A52053F00AA7CE8 /* WordGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGameViewController.swift; sourceTree = "<group>"; };
 		398D74B01A4A0E4600B127BD /* memolympics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = memolympics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		398D74B41A4A0E4600B127BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		398D74B51A4A0E4600B127BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +45,14 @@
 		398D74C51A4A0E4600B127BD /* memolympicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = memolympicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		398D74CA1A4A0E4600B127BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		398D74CB1A4A0E4600B127BD /* memolympicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memolympicsTests.swift; sourceTree = "<group>"; };
+		398D74D71A4A0E9900B127BD /* WordGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGame.swift; sourceTree = "<group>"; };
+		398D74D91A4A0F7800B127BD /* playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = playground.playground; sourceTree = "<group>"; };
+		398D74E71A4A52CC00B127BD /* dictutf8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictutf8.txt; sourceTree = "<group>"; };
+		39F74E1C1A57B8C900FF10D8 /* gameDifficultyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameDifficultyViewController.swift; sourceTree = "<group>"; };
+		39FBB8801A55FE6C00EE25C8 /* MemolympicsKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemolympicsKit.swift; sourceTree = "<group>"; };
+		39FBB8821A55FEBB00EE25C8 /* TimeFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFunctions.swift; sourceTree = "<group>"; };
+		39FBB8861A5606F500EE25C8 /* WordScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordScroller.swift; sourceTree = "<group>"; };
+		39FE3BC31A5B869D0063D81C /* gameDifficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameDifficulty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +95,19 @@
 			isa = PBXGroup;
 			children = (
 				398D74B51A4A0E4600B127BD /* AppDelegate.swift */,
-				398D74B71A4A0E4600B127BD /* ViewController.swift */,
+				39F74E1C1A57B8C900FF10D8 /* gameDifficultyViewController.swift */,
 				398D74B91A4A0E4600B127BD /* Main.storyboard */,
+				398D74D71A4A0E9900B127BD /* WordGame.swift */,
+				39FE3BC31A5B869D0063D81C /* gameDifficulty.swift */,
+				3928405C1A52053F00AA7CE8 /* WordGameViewController.swift */,
+				39FBB8861A5606F500EE25C8 /* WordScroller.swift */,
+				39FBB8821A55FEBB00EE25C8 /* TimeFunctions.swift */,
+				39FBB8801A55FE6C00EE25C8 /* MemolympicsKit.swift */,
 				398D74BC1A4A0E4600B127BD /* Images.xcassets */,
 				398D74BE1A4A0E4600B127BD /* LaunchScreen.xib */,
 				398D74B31A4A0E4600B127BD /* Supporting Files */,
+				398D74D91A4A0F7800B127BD /* playground.playground */,
+				398D74B71A4A0E4600B127BD /* ViewController.swift */,
 			);
 			path = memolympics;
 			sourceTree = "<group>";
@@ -90,6 +115,7 @@
 		398D74B31A4A0E4600B127BD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				398D74E71A4A52CC00B127BD /* dictutf8.txt */,
 				398D74B41A4A0E4600B127BD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				398D74BB1A4A0E4600B127BD /* Main.storyboard in Resources */,
+				398D74E81A4A52CC00B127BD /* dictutf8.txt in Resources */,
 				398D74C01A4A0E4600B127BD /* LaunchScreen.xib in Resources */,
 				398D74BD1A4A0E4600B127BD /* Images.xcassets in Resources */,
 			);
@@ -212,6 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FBB8871A5606F500EE25C8 /* WordScroller.swift in Sources */,
+				3928405D1A52053F00AA7CE8 /* WordGameViewController.swift in Sources */,
+				39FE3BC41A5B869D0063D81C /* gameDifficulty.swift in Sources */,
+				398D74D81A4A0E9900B127BD /* WordGame.swift in Sources */,
+				39FBB8831A55FEBB00EE25C8 /* TimeFunctions.swift in Sources */,
+				39FBB8811A55FE6C00EE25C8 /* MemolympicsKit.swift in Sources */,
+				39F74E1D1A57B8C900FF10D8 /* gameDifficultyViewController.swift in Sources */,
 				398D74B81A4A0E4600B127BD /* ViewController.swift in Sources */,
 				398D74B61A4A0E4600B127BD /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +439,7 @@
 				398D74D11A4A0E4600B127BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		398D74D21A4A0E4600B127BD /* Build configuration list for PBXNativeTarget "memolympicsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +448,7 @@
 				398D74D41A4A0E4600B127BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
